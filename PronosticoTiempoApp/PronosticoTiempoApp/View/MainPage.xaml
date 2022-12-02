@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PronosticoTiempoApp.MainPage">
+    <ContentPage.Content>
+        <ScrollView  BackgroundColor="#46A8FF">
+            <StackLayout>
+
+                <Frame BackgroundColor="Transparent" Padding="15" CornerRadius="0">
+                    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                        <Label TextColor="Black" FontAttributes="Bold" FontSize="30" >
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{Binding clima.locality.name, StringFormat='{0} - ' }" />
+                                    <Span Text="{Binding clima.locality.country, StringFormat=' {0}'}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label Text="Clima Actual" TextColor="Black" FontSize="20" HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+                <Frame  BackgroundColor="Transparent" Margin="10,0" Padding="50">
+                    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+
+                        <Label Text="{Binding clima.hour_hour.hour1.temperature, StringFormat='{0}°c'}" FontSize="90" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Label Text="{Binding clima.hour_hour.hour1.text}" FontSize="30" HorizontalTextAlignment="Center" TextColor="Black"/>
+
+                    </StackLayout>
+                </Frame>
+
+                <Frame BackgroundColor="#0087FF" Margin="10,0" Padding="15" WidthRequest="50" >
+                    <Grid  HeightRequest="200" >
+                        <Grid.RowDefinitions >
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Image Source="dia_nublado.png" WidthRequest="50" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <Label TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Hoy -" />
+                                    <Span Text="{Binding clima.day1.text, StringFormat=' {0}'}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label TextColor="Black" FontAttributes="Bold" Grid.Row="0" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{Binding clima.day1.temperature_max, StringFormat='{0}° / ' }" />
+                                    <Span Text="{Binding clima.day1.temperature_min, StringFormat=' {0}°'}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+
+                        <Image Source="sol.png" WidthRequest="50" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        <Label TextColor="Black" FontAttributes="Bold" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="Mañana - " />
+                                    <Span Text="{Binding clima.day2.text, StringFormat=' {0}'}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <Label TextColor="Black" FontAttributes="Bold" Grid.Row="1" Grid.Column="2" VerticalOptions="Center" HorizontalOptions="Center">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="{Binding clima.day2.temperature_max, StringFormat='{0}° / ' }" />
+                                    <Span Text="{Binding clima.day2.temperature_min, StringFormat=' {0}°'}"/>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                        <StackLayout Grid.Row="2" Grid.ColumnSpan="3" Margin="40,10,40,10" >
+                            <Button Text="Prevision para 7 dias "  TextColor="Black" CornerRadius="50" BorderWidth="1" BorderColor="White" BackgroundColor="#45A7FF"
+                                 Clicked="Button_DiasSemana" />
+                        </StackLayout>
+                      
+                    </Grid>
+                </Frame>
+                <!--<Frame>
+                    <StackLayout Padding="50,20">
+                        <Label Text="Para ver el dia mucho mas detallado dale al boton" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                        <Button Text="Detalle del clima" CornerRadius="20" Clicked="Button_Horas" />
+                    </StackLayout>
+                </Frame>-->
+
+                <Frame BackgroundColor="Transparent" >
+                    <StackLayout>
+                        <Label Text="Detalles osbre el clima de hoy" FontSize="12" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Black"/>
+                        <Grid >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="{Binding clima.hour_hour.hour1.text}" FontSize="25" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Black"
+                               Grid.Row="0" Grid.ColumnSpan="2"/>
+                            <StackLayout Grid.Row="1" Grid.Column="0">
+                                <Label Text="Sensacion Térmica" TextColor="Black"/>
+                                <Label Text="{Binding clima.hour_hour.hour1.temperature, StringFormat='{0}°c'}" FontAttributes="Bold" TextColor="Black"/>
+                            </StackLayout>
+                            <StackLayout Grid.Row="1" Grid.Column="1">
+                                <Label Text="Humedad" TextColor="Black"/>
+                                <Label Text="{Binding clima.hour_hour.hour1.humidity, StringFormat='{0}%'}" FontAttributes="Bold" TextColor="Black"/>
+                            </StackLayout>                         
+                            <StackLayout Grid.Row="2" Grid.Column="0">
+                                <Label Text="Velocidad del viento" TextColor="Black"/>
+                                <Label Text="{Binding clima.hour_hour.hour1.wind, StringFormat='{0}km/h'}" FontAttributes="Bold" TextColor="Black"/>
+                            </StackLayout>
+                            <StackLayout Grid.Row="2" Grid.Column="1">
+                                <Label Text="Presión" TextColor="Black"/>
+                                <Label Text="{Binding clima.hour_hour.hour1.pressure, StringFormat='{0}mbar'}" FontAttributes="Bold" TextColor="Black"/>
+                            </StackLayout>
+                            <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="3" Grid.ColumnSpan="2">
+                                <Label Text="Dirección del viento" TextColor="Black"/>
+                                <Label Text="{Binding clima.hour_hour.hour1.wind_direction, StringFormat='{0}'}" TextColor="Black" VerticalOptions="Center" HorizontalOptions="Center" FontAttributes="Bold"/>
+                            </StackLayout>
+
+
+
+
+                        </Grid>
+                    </StackLayout>
+                    
+                </Frame>
+                
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Margin="0,0,0,20">
+                    <Label Text="Los datos proporcionados son de " TextColor="Black" />
+                    <Label Text="{Binding clima.copyright}" TextColor="Black" FontAttributes="Bold"/>
+                </StackLayout>
+                <!--<Image Source="TipoCambio.png" WidthRequest="200"/>
+                <Label Text="{Binding clima.use, StringFormat='Compra: {0}'}" FontSize="Title" Padding="30,10,30,10"/>
+                <Label Text="{Binding clima.venta, StringFormat='Venta: {0}'}" FontSize="16" Padding="30,0,30,0"/>
+                <Label Text="{Binding clima.hour_hour.hour1.temperature}" />
+                <Image Source="{Binding clima.hour_hour.hour1.icon_wind}" WidthRequest="100"/>-->
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33027.164
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PronosticoTiempoApp.Android", "PronosticoTiempoApp\PronosticoTiempoApp.Android\PronosticoTiempoApp.Android.csproj", "{FE1860FE-FEA4-495E-B450-5C738B8BEA0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PronosticoTiempoApp", "PronosticoTiempoApp\PronosticoTiempoApp\PronosticoTiempoApp.csproj", "{5BDF0C18-1964-4DBC-BCA7-F199DEC36EE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE1860FE-FEA4-495E-B450-5C738B8BEA0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE1860FE-FEA4-495E-B450-5C738B8BEA0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE1860FE-FEA4-495E-B450-5C738B8BEA0A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FE1860FE-FEA4-495E-B450-5C738B8BEA0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE1860FE-FEA4-495E-B450-5C738B8BEA0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE1860FE-FEA4-495E-B450-5C738B8BEA0A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5BDF0C18-1964-4DBC-BCA7-F199DEC36EE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BDF0C18-1964-4DBC-BCA7-F199DEC36EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BDF0C18-1964-4DBC-BCA7-F199DEC36EE2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5BDF0C18-1964-4DBC-BCA7-F199DEC36EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BDF0C18-1964-4DBC-BCA7-F199DEC36EE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BDF0C18-1964-4DBC-BCA7-F199DEC36EE2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {849027B2-4807-4DAE-AF30-36AAFF59AC6D}
+	EndGlobalSection
+EndGlobal

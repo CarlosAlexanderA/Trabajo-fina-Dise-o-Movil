@@ -1,0 +1,17 @@
+D:\Visual Sources\PronosticoTiempoApp\PronosticoTiempoApp\PronosticoTiempoApp\obj\Debug\netstandard2.0\PronosticoTiempoApp.csproj.AssemblyReference.cache
+D:\Visual Sources\PronosticoTiempoApp\PronosticoTiempoApp\PronosticoTiempoApp\obj\Debug\netstandard2.0\PronosticoTiempoApp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual Sources\PronosticoTiempoApp\PronosticoTiempoApp\PronosticoTiempoApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Visual Sources\PronosticoTiempoApp\PronosticoTiempoApp\PronosticoTiempoApp\obj\Debug\netstandard2.0\View\MainPage.xaml.g.cs
+D:\Visual Sources\PronosticoTiempoApp\PronosticoTiempoApp\PronosticoTiempoApp\obj\Debug\netstandard2.0\PronosticoTiempoApp.AssemblyInfoInputs.cache
+D:\Visual Sources\PronosticoTiempoApp\PronosticoTiempoApp\PronosticoTiempoApp\obj\Debug\netstandard2.0\PronosticoTiempoApp.AssemblyInfo.cs
+D:\Visual Sources\PronosticoTiempoApp\PronosticoTiempoApp\PronosticoTiempoApp\obj\Debug\netstandard2.0\PronosticoTiempoApp.csproj.CoreCompileInputs.cache
+D:\Visual Sources\PronosticoTiempoApp\PronosticoTiempoApp\PronosticoTiempoApp\bin\Debug\netstandard2.0\PronosticoTiempoApp.deps.json
+D:\Visual Sources\PronosticoTiempoApp\PronosticoTiempoApp\PronosticoTiempoApp\bin\Debug\netstandard2.0\PronosticoTiempoApp.dll
+D:\Visual Sources\PronosticoTiempoApp\PronosticoTiempoApp\PronosticoTiempoApp\bin\Debug\netstandard2.0\ref\PronosticoTiempoApp.dll
+D:\Visual Sources\PronosticoTiempoApp\PronosticoTiempoApp\PronosticoTiempoApp\bin\Debug\netstandard2.0\PronosticoTiempoApp.pdb
+D:\Visual Sources\PronosticoTiempoApp\PronosticoTiempoApp\PronosticoTiempoApp\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Visual Sources\PronosticoTiempoApp\PronosticoTiempoApp\PronosticoTiempoApp\obj\Debug\netstandard2.0\PronosticoTiempoApp.dll
+D:\Visual Sources\PronosticoTiempoApp\PronosticoTiempoApp\PronosticoTiempoApp\obj\Debug\netstandard2.0\ref\PronosticoTiempoApp.dll
+D:\Visual Sources\PronosticoTiempoApp\PronosticoTiempoApp\PronosticoTiempoApp\obj\Debug\netstandard2.0\PronosticoTiempoApp.pdb
+D:\Visual Sources\PronosticoTiempoApp\PronosticoTiempoApp\PronosticoTiempoApp\obj\Debug\netstandard2.0\View\DiasSemana.xaml.g.cs
+D:\Visual Sources\PronosticoTiempoApp\PronosticoTiempoApp\PronosticoTiempoApp\obj\Debug\netstandard2.0\View\HorasDia.xaml.g.cs

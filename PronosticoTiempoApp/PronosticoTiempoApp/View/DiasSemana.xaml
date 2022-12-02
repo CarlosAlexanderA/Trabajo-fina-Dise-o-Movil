@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PronosticoTiempoApp.View.DiasSemana">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <Frame BorderColor="DarkGray" BackgroundColor="LightGray">
+                    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                        <Label Text="Hoy" FontAttributes="Bold" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center" />
+                        <Label Text="{Binding clima.day1.date}" VerticalOptions="Center" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Center"/>
+                        <Grid VerticalOptions="Center" HorizontalOptions="Center">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Dia" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label Text="Noche" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label Text="{Binding clima.day1.temperature_max, StringFormat='{0}°'}" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label Text="{Binding clima.day1.temperature_min, StringFormat='{0}°'}" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label Text="{Binding clima.day1.wind, StringFormat='{0}km/h'}" Grid.Row="2" Grid.ColumnSpan="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BorderColor="DarkGray" BackgroundColor="White">
+                    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                        <Label Text="Mañana" FontAttributes="Bold" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center" />
+                        <Label Text="{Binding clima.day2.date}" VerticalOptions="Center" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Center"/>
+                        <Grid VerticalOptions="Center" HorizontalOptions="Center">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Dia" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label Text="Noche" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label Text="{Binding clima.day2.temperature_max, StringFormat='{0}°'}" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label Text="{Binding clima.day2.temperature_min, StringFormat='{0}°'}" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label Text="{Binding clima.day2.wind, StringFormat='{0}km/h'}" Grid.Row="2" Grid.ColumnSpan="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BorderColor="DarkGray" BackgroundColor="LightGray">
+                    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                        <Label Text="--------" FontAttributes="Bold" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center" />
+                        <Label Text="{Binding clima.day3.date}" VerticalOptions="Center" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Center"/>
+                        <Grid VerticalOptions="Center" HorizontalOptions="Center">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Dia" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label Text="Noche" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label Text="{Binding clima.day3.temperature_max, StringFormat='{0}°'}" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label Text="{Binding clima.day3.temperature_min, StringFormat='{0}°'}" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label Text="{Binding clima.day3.wind, StringFormat='{0}km/h'}" Grid.Row="2" Grid.ColumnSpan="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BorderColor="DarkGray" BackgroundColor="White">
+                    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                        <Label Text="--------" FontAttributes="Bold" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center" />
+                        <Label Text="{Binding clima.day4.date}" VerticalOptions="Center" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Center"/>
+                        <Grid VerticalOptions="Center" HorizontalOptions="Center">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Dia" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label Text="Noche" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label Text="{Binding clima.day4.temperature_max, StringFormat='{0}°'}" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label Text="{Binding clima.day4.temperature_min, StringFormat='{0}°'}" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label Text="{Binding clima.day4.wind, StringFormat='{0}km/h'}" Grid.Row="2" Grid.ColumnSpan="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BorderColor="DarkGray" BackgroundColor="LightGray">
+                    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                        <Label Text="--------" FontAttributes="Bold" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center" />
+                        <Label Text="{Binding clima.day5.date}" VerticalOptions="Center" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Center"/>
+                        <Grid VerticalOptions="Center" HorizontalOptions="Center">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Dia" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label Text="Noche" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label Text="{Binding clima.day5.temperature_max, StringFormat='{0}°'}" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label Text="{Binding clima.day5.temperature_min, StringFormat='{0}°'}" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label Text="{Binding clima.day5.wind, StringFormat='{0}km/h'}" Grid.Row="2" Grid.ColumnSpan="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BorderColor="DarkGray" BackgroundColor="White">
+                    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                        <Label Text="--------" FontAttributes="Bold" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center" />
+                        <Label Text="{Binding clima.day6.date}" VerticalOptions="Center" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Center"/>
+                        <Grid VerticalOptions="Center" HorizontalOptions="Center">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Dia" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label Text="Noche" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label Text="{Binding clima.day6.temperature_max, StringFormat='{0}°'}" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label Text="{Binding clima.day6.temperature_min, StringFormat='{0}°'}" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label Text="{Binding clima.day6.wind, StringFormat='{0}km/h'}" Grid.Row="2" Grid.ColumnSpan="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+
+                <Frame BorderColor="DarkGray" BackgroundColor="LightGray">
+                    <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+                        <Label Text="--------" FontAttributes="Bold" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center" />
+                        <Label Text="{Binding clima.day7.date}" VerticalOptions="Center" FontAttributes="Bold" FontSize="Medium" HorizontalOptions="Center"/>
+                        <Grid VerticalOptions="Center" HorizontalOptions="Center">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Dia" FontAttributes="Bold" Grid.Row="0" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label Text="Noche" FontAttributes="Bold" Grid.Row="0" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label Text="{Binding clima.day7.temperature_max, StringFormat='{0}°'}" Grid.Row="1" Grid.Column="0" VerticalOptions="Center" HorizontalOptions="Center"/>
+                            <Label Text="{Binding clima.day7.temperature_min, StringFormat='{0}°'}" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" HorizontalOptions="Center"/>
+
+                            <Label Text="{Binding clima.day7.wind, StringFormat='{0}km/h'}" Grid.Row="2" Grid.ColumnSpan="2" VerticalOptions="Center" HorizontalOptions="Center"/>
+                        </Grid>
+                    </StackLayout>
+                </Frame>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
